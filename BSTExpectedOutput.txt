@@ -1,0 +1,212 @@
+BST Test Program - Prof. Eckert
+
+1) Building a Tree
+========================
+
+  Initially: null
+
+  Insert (3.0, A): 
+   (k=3.00, v=A)
+      null
+      null
+
+  Insert (5.0, B) 
+   (k=3.00, v=A)
+      null
+      (k=5.00, v=B)
+         null
+         null
+
+  Insert (2.0, C) 
+   (k=3.00, v=A)
+      (k=2.00, v=C)
+         null
+         null
+      (k=5.00, v=B)
+         null
+         null
+
+  Insert (6.0, D) 
+   (k=3.00, v=A)
+      (k=2.00, v=C)
+         null
+         null
+      (k=5.00, v=B)
+         null
+         (k=6.00, v=D)
+            null
+            null
+
+  Insert (4.0, E) 
+   (k=3.00, v=A)
+      (k=2.00, v=C)
+         null
+         null
+      (k=5.00, v=B)
+         (k=4.00, v=E)
+            null
+            null
+         (k=6.00, v=D)
+            null
+            null
+
+2) Finding Elements
+========================
+
+  b1.find(2.0): C
+  b1.find(3.0): A
+  b1.find(4.0): E
+  b1.find(5.0): B
+  b1.find(6.0): D
+
+3) Deleting Elements
+========================
+
+  Initially:
+     (k=6.00, v=E)
+      (k=3.00, v=H)
+         (k=2.00, v=F)
+            (k=1.00, v=A)
+               null
+               null
+            null
+         (k=5.00, v=C)
+            (k=4.00, v=G)
+               null
+               null
+            null
+      (k=9.00, v=I)
+         (k=7.00, v=J)
+            null
+            (k=8.00, v=B)
+               null
+               null
+         (k=10.00, v=D)
+            null
+            (k=11.00, v=K)
+               null
+               null
+
+
+  Delete(1.0) Left child, leaf: A
+     (k=6.00, v=E)
+      (k=3.00, v=H)
+         (k=2.00, v=F)
+            null
+            null
+         (k=5.00, v=C)
+            (k=4.00, v=G)
+               null
+               null
+            null
+      (k=9.00, v=I)
+         (k=7.00, v=J)
+            null
+            (k=8.00, v=B)
+               null
+               null
+         (k=10.00, v=D)
+            null
+            (k=11.00, v=K)
+               null
+               null
+
+  Delete(8.0) Right child, leaf: B
+     (k=6.00, v=E)
+      (k=3.00, v=H)
+         (k=2.00, v=F)
+            null
+            null
+         (k=5.00, v=C)
+            (k=4.00, v=G)
+               null
+               null
+            null
+      (k=9.00, v=I)
+         (k=7.00, v=J)
+            null
+            null
+         (k=10.00, v=D)
+            null
+            (k=11.00, v=K)
+               null
+               null
+
+  Delete(5.0) Has left child, internal: C
+     (k=6.00, v=E)
+      (k=3.00, v=H)
+         (k=2.00, v=F)
+            null
+            null
+         (k=4.00, v=G)
+            null
+            null
+      (k=9.00, v=I)
+         (k=7.00, v=J)
+            null
+            null
+         (k=10.00, v=D)
+            null
+            (k=11.00, v=K)
+               null
+               null
+
+  Delete(10.0) Has right child, internal: D
+     (k=6.00, v=E)
+      (k=3.00, v=H)
+         (k=2.00, v=F)
+            null
+            null
+         (k=4.00, v=G)
+            null
+            null
+      (k=9.00, v=I)
+         (k=7.00, v=J)
+            null
+            null
+         (k=11.00, v=K)
+            null
+            null
+
+  Delete(6.0) Has two children, internal: E
+     (k=7.00, v=J)
+      (k=3.00, v=H)
+         (k=2.00, v=F)
+            null
+            null
+         (k=4.00, v=G)
+            null
+            null
+      (k=9.00, v=I)
+         null
+         (k=11.00, v=K)
+            null
+            null
+
+4) A Large Tree
+========================
+
+  First 10: Size is now 10
+     (k=381.59, v=starred)
+      (k=131.61, v=quilted)
+         (k=40.16, v=chirrup)
+            null
+            (k=47.01, v=cosign)
+               null
+               null
+         (k=166.98, v=anecdotes)
+            (k=146.48, v=subsystems)
+               null
+               null
+            (k=268.04, v=machinations)
+               null
+               null
+      (k=435.09, v=mammogram)
+         null
+         (k=441.81, v=unaccompanied)
+            null
+            (k=691.37, v=state)
+               null
+               null
+
+  Remaining Elements: Size is now 100000
