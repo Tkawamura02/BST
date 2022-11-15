@@ -1,3 +1,5 @@
+//Tiffany Kawamura
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -8,7 +10,7 @@ public class BSTTest {
 	public static void main(String[] args) throws FileNotFoundException {
 		BST b1 = new BST();
 
-		System.out.println("BST Test Program - Prof. Eckert\n");
+		System.out.println("BST Test Program - Tiffany Kawamura\n");
 
 		
 		System.out.println("1) Building a Tree");
@@ -29,11 +31,11 @@ public class BSTTest {
 		System.out.println("2) Finding Elements");
 		System.out.println("========================\n");
 		
-		System.out.println("  b1.find(2.0): " + b1.find(2.0));
-		System.out.println("  b1.find(3.0): " + b1.find(3.0));
-		System.out.println("  b1.find(4.0): " + b1.find(4.0));
-		System.out.println("  b1.find(5.0): " + b1.find(5.0));
-		System.out.println("  b1.find(6.0): " + b1.find(6.0));
+		System.out.println("  b1.find(2.0): " + b1.find(2.0)); //C
+		System.out.println("  b1.find(3.0): " + b1.find(3.0)); //A
+		System.out.println("  b1.find(4.0): " + b1.find(4.0)); //E
+		System.out.println("  b1.find(5.0): " + b1.find(5.0)); //B
+		System.out.println("  b1.find(6.0): " + b1.find(6.0)); //D
 		
 		System.out.println("\n3) Deleting Elements");
 		System.out.println("========================\n");
